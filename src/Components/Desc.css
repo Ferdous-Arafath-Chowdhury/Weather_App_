@@ -1,0 +1,40 @@
+.plate 
+{
+    height: 150px;
+    height: fit-content;
+    width: 200px;
+    box-sizing: border-box;
+    /* border: 3px solid green; */
+    margin-top: 12px;
+    margin-right: 10px;
+    margin-left:5px;
+    background-color: rgba(208, 255, 0, 0.1);
+    box-shadow: 0px 14px 16px rgba(243, 4, 4, 0.1);
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(208, 255, 0, 0.4)
+    
+   
+   
+    
+}
+.desc 
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 20px;
+} 
+
+@media screen and (max-width: 1024px){
+    .desc
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media screen and (max-width: 600px){
+    .desc
+    {
+        grid-template-columns: 1fr;
+    }
+}
